@@ -2,13 +2,15 @@
 // 02-maths/05-factorial/script.js - 2.5: Factorial
 
 (() => {
-    
-    // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("run").addEventListener("click", () => {
-
-        // your code here
-
+        let num = new Number(document.getElementById("number").value);
+        function factorial(num) {
+              for (let x = num - 1; x >= 1; x--) {
+                num *= x;
+              }
+              return num;
+          }
+        alert(factorial(num));
     });
 
 })();

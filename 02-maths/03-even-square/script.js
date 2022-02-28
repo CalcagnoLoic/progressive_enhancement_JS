@@ -3,11 +3,18 @@
 
 
 (() => {
-
     document.getElementById("run").addEventListener("click", () => {
-
-        // your code here
-
+        for (let i = 1; i < 22 ; i++) {
+            alert(Math.pow(i,2));
+        }
     });
-
 })();
+
+(() => {
+    document.getElementById("run").addEventListener("click", () => {
+        for (let i = 1; i < 22 ; i++) {
+            alert(i*i);
+        }
+    });
+})();
+
