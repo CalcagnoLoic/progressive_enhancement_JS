@@ -7,4 +7,22 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+    function info() {
+        let age = prompt("Age", "What is your age?");
+        let gender = prompt("Gender", "What is your gender?");
+        let town = prompt("City", "Where do you live?");
+        let x = confirm("You have " + age + ". You are a " + gender + " and you live in " + town);
+        
+        if (x == true) {
+            alert ("ok");
+        } else {
+            let age = prompt("Age", "What is your age?");
+            let gender = prompt("Gender", "What is your gender?");
+            let town = prompt("City", "Where do you live?");
+            confirm("You have " + age + ". You are a " + gender + " and you live in " + town);
+        } 
+    }
+    //Sors de la boucle après un passage 
+    // TODO : améliorer le code pour n passages
+    info()
 })();

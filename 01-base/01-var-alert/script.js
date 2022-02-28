@@ -6,4 +6,6 @@
     console.log('Hello Keller programmer');
 
     // YOUR CODE HERE
+    let alert_mess = "Hello, World!";
+    alert(alert_mess);
 })();
