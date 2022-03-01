@@ -3,7 +3,16 @@
 
 
 (() => {
-
-    // your code here
-
+    document.getElementById("red").addEventListener("click", () => {
+        document.body.style.background="red"
+    })
+    document.getElementById("green").addEventListener("click", () => {
+        document.body.style.background="green"
+    })
+    document.getElementById("yellow").addEventListener("click", () => {
+        document.body.style.background="yellow"
+    })
+    document.getElementById("blue").addEventListener("click", () => {
+        document.body.style.background="blue"
+    })
 })();
