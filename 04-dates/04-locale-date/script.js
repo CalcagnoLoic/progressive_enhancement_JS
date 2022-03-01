@@ -3,9 +3,13 @@
 
 
 (() => {
+    let today = new Date();
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let time = today.getHours() + "h" + today.getMinutes() + "min" + today.getSeconds();
 
-    // your code here
+    let date = (today.toLocaleString('en-EN', {weekday:'long'})) + " " + today.getDay() + " " + (today.toLocaleString('en-EN', {month:'long'})) + " " + today.getFullYear() + ",";
 
+    let dateTime = date + " " + time
+
+    document.getElementById("target").innerHTML = dateTime
 })();
