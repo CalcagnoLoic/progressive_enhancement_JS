@@ -80,6 +80,14 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let user_info = people.filter(items => items.firstname == "Jean" && items.lastname == "Dupont");
+        user_info.forEach(el => {
+            console.log(el.email);
+        });
 
+        people.indexOf(this.firstname == "Jean");
+    })
 })();
+
+//TODO : trouver l'index => indexOf()??

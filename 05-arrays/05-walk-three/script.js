@@ -31,6 +31,14 @@
         },
     ];
 
-    // your code here
+    //Avec la méthode map 
+    //
+    //document.getElementById("run").addEventListener("click", function(){
+    //    let people2 = people.map(element => element.firstname + " " + element.lastname);
+    //    people2.forEach(item => console.log(item));        
+    //})
 
+    document.getElementById("run").addEventListener("click", function (){
+        people.forEach(item => console.log(item.firstname + " " + item.lastname));
+    })
 })();
