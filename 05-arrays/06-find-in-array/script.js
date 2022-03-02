@@ -86,8 +86,9 @@
             console.log(el.email);
         });
 
-        people.indexOf(this.firstname == "Jean");
+        let index = people.map(object => object.email).indexOf('jdupont@elpais.com');
+        console.log(index)
     })
 })();
 
-//TODO : trouver l'index => indexOf()??
+
