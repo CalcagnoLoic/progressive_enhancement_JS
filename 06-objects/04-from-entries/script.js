@@ -4,5 +4,15 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+    
+    document.getElementById("run").addEventListener("click", () => {
+        let map_key = new Map([keys]);
+        let map_value = new Map([values])
+
+        console.log(map_key);
+        console.log(map_value);
+
+        //let object = Object.fromEntries(map);
+        //console.log(object)
+    })
 })();
