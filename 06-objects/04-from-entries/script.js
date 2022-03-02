@@ -13,6 +13,6 @@
         console.log(map_value);
 
         //let object = Object.fromEntries(map);
-        //console.log(object)
+        console.log(object)
     })
 })();
