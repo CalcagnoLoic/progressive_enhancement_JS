@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("target").addEventListener("click", () => {
+        
+    })
 
 })();

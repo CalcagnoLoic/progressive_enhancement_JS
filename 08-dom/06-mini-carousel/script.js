@@ -11,6 +11,8 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    document.getElementById("next").addEventListener("click", () => {
+        
+    })
 
 })();

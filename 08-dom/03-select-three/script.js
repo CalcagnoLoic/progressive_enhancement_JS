@@ -2,7 +2,9 @@
 
 
 (() => {
+    let myTarget = document.getElementsByClassName("target");
 
-    // your code here
-
+    for (let x = 0; x  < myTarget.length; x ++) {
+        myTarget[x].innerHTML = "onwned";
+    }
 })();

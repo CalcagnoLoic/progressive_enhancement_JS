@@ -3,6 +3,9 @@
 
 (() => {
 
-    // your code here
+    let src = document.getElementById("source");
+    console.log(src)
+
+    let newElem = document.createElement("img")
 
 })();
