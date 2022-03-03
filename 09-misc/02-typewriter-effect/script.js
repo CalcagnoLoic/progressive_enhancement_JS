@@ -9,10 +9,10 @@
 
     function typeWriter() {
         if (i < txt.length) {
-        document.getElementById("target").innerHTML += txt.charAt(i);
+        document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
     }
-    typeWriter()
+    typeWriter
 })();
