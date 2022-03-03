@@ -2,5 +2,20 @@
 
 
 (() => {
-    // your code here
+    class Person {
+        constructor(firstame, lastname) {
+            this.firstame = firstame,
+            this.lastname = lastname
+        }
+        sayHello(firstame, lastname) {
+            return "Hello, " + firstame + " " + lastname + "!"
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        let hey = new Person();
+        console.log(hey.sayHello("Loïc", "Calcagno"));
+    })
+
+    //document
 })();

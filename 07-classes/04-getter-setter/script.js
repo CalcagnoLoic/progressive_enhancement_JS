@@ -2,5 +2,22 @@
 
 
 (() => {
-    // your code here
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname,
+            this.lastname = lastname
+        }
+        get name(){
+            return `${this.firstname} ${this.lastname}`
+        }
+        //set name(firstname, lastname) {
+        //    console.log(firstname)
+        //    console.log(lastname)
+        //}
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        let ind = new Person("Loïc", "Calcagno");
+        console.log(ind.name)
+    })
 })();

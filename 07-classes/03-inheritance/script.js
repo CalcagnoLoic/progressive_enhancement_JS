@@ -7,5 +7,23 @@
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
+
+    class Cat extends Animal{
+        constructor(name){
+            super(),
+            this.name = name
+        }
+    }
+
+    class Dog extends Animal{
+        constructor(name){
+            super(),
+            this.name = name
+        }
+    }
+    
+    document.getElementById("run").addEventListener("click", () => {
+        let hey = new Cat("test")
+        console.log(hey.sayHello)
+    })
 })();
