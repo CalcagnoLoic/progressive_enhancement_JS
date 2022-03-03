@@ -8,12 +8,11 @@
             this.lastname = lastname
         }
         get name(){
-            return `${this.firstname} ${this.lastname}`
+            return `${this.firstname} ${this.lastname}`;
         }
-        //set name(firstname, lastname) {
-        //    console.log(firstname)
-        //    console.log(lastname)
-        //}
+        set name(id) {
+            return this.split(id);
+        }
     }
 
     document.getElementById("run").addEventListener("click", () => {
