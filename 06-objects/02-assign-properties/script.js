@@ -20,12 +20,9 @@
     };
     document.getElementById("run").addEventListener("click", function(){
         //transformation de l'objet defaultProps en un array
-        let props = Object.keys(defaultProps)
-            .map(function(key) {
-                return defaultProps[key];
-            });
 
-        let computers_info = [...computers, ...props]
-        console.log(computers_info)
+        let result = Object.keys(defaultProps).map(e => ({key: e, value : defaultProps[e]}))
+        console.log(result)
+        console.log(computers)
     })
 })();
