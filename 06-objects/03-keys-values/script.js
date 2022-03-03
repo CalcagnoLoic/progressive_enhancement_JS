@@ -11,11 +11,15 @@
         status: "married",
     };
     document.getElementById("run").addEventListener("click", function (){
+        //affiche les keys
         for(const [key] of Object.entries(person)) {
             console.log(key);
-          }
-        for(const [value] of Object.entries(person)) {
+        }
+
+        // affiche les values
+        for(const [,value] of Object.entries(person)) {
             console.log(value);
           }
+        
     })
 })();
