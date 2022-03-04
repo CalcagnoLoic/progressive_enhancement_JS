@@ -10,31 +10,27 @@
 
     class Cat extends Animal {
         static greeting = "Hello" ;
-        constructor(greeting, name) {
-            super(greeting),
+        constructor(name) {
+            super(),
             this.name = name
         }
-        sayHello() {
-            return super.sayHello()
-        }
+        // je ne rappelle pas la méthode avec super car héritage venant d'animal 
     } 
 
     class Dog extends Animal{
         static greeting = "Hello" ;
-        constructor(greeting, name) {
-            super(greeting),
+        constructor(name) {
+            super(),
             this.name = name
         }
-        sayHello() {
-            return super.sayHello()
-        }
+        // je ne rappelle pas la méthode avec super car héritage venant d'animal 
     }
     
     document.getElementById("run").addEventListener("click", () => {
-        let cat = new Cat("","a cat")
+        let cat = new Cat("a cat")
         console.log(cat.sayHello())
 
-        let dog = new Dog("","a dog")
+        let dog = new Dog("a dog")
         console.log(dog.sayHello())
 
     })

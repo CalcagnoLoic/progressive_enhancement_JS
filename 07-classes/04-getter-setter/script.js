@@ -8,7 +8,10 @@
             this.lastname = lastname
         }
         get Name(){
-            return `${this.firstname} ${this.lastname}`;
+            return this.lastname;
+
+            //return `${this.firstname} ${this.lastname}`;
+            //méthode, pas un get!
         }
         
         set Name(value) {
@@ -17,7 +20,7 @@
     }
 
     document.getElementById("run").addEventListener("click", () => {
-        let ind = new Person("Loïc", "Calcagno");
+        let ind = new Person("", "Calcagno");
         console.log(ind.Name)
 
         let ind2 = new Person("","Calcagno");
