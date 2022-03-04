@@ -3,6 +3,14 @@
 
 (() => {
 
-    // your code here
+    let field = document.getElementById("pass-one");
+    let count = document.getElementById("counter");
+    const limit = 10;
 
+    field.addEventListener("input",() => {
+
+        let textLength = field.value.length; // je stocke dans ma variable la longueur de la chaine de caractère
+
+        count.textContent = textLength + "/" + limit; //inscrit le nombre de caractère
+    }); 
 })();

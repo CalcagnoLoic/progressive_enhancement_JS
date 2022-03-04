@@ -2,10 +2,23 @@
 
 
 (() => {
+    //récupération de l'attribut
+    let src = document.getElementById("source").getAttribute("data-image");
 
-    let src = document.getElementById("source");
-    console.log(src)
+    //ajout de l'attribut
+    let attr = document.createAttribute("newImg");
+    attr.value = src;
+    //node.setAttributeNode(attr)
+    //node.getAttribute(src)
 
-    let newElem = document.createElement("img")
+    //let newImg = document.getElementById("target") //setAttributeNode(attr);
 
+    //suppression de l'attribut
+    document.getElementById("source").removeAttribute("data-image");
+
+
+
+    //console.log(src)
+    console.log(attr)
+    //console.log(newImg)
 })();

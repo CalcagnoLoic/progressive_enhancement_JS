@@ -3,6 +3,17 @@
 
 (() => {
 
-    // your code here
+    let field = document.getElementById("pass-one");
+    let valid = document.getElementById("validity");
+
+    if{
+
+    } else {
+        
+    }
+
+
+
+
 
 })();

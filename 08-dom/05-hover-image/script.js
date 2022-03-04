@@ -3,10 +3,8 @@
 
 (() => {
 
-    let test = document.getElementsByTagName("img");
-
-    test.addEventListener("mouseover", ( event ) => {
-        alert("mouse over test!")
-        , false})
-
+    let src = document.getElementsByTagName("img");
+    src.setAttribute("src", "data-hover")
+    
+    console.log(src)
 })();

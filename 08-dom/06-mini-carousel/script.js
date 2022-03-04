@@ -11,8 +11,6 @@
         "../../_shared/img/map.svg",
     ];
 
-    document.getElementById("next").addEventListener("click", () => {
-        
-    })
+    
 
 })();
