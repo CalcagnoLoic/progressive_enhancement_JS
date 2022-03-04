@@ -7,16 +7,21 @@
             this.firstname = firstname,
             this.lastname = lastname
         }
-        get name(){
+        get Name(){
             return `${this.firstname} ${this.lastname}`;
         }
-        set name(id) {
-            return this.split(id);
+        
+        set Name(value) {
+            this.firstname = value;
         }
     }
 
     document.getElementById("run").addEventListener("click", () => {
         let ind = new Person("Loïc", "Calcagno");
-        console.log(ind.name)
+        console.log(ind.Name)
+
+        let ind2 = new Person("","Calcagno");
+        ind2.Name = "Loïc"
+        console.log(ind2.Name)
     })
 })();

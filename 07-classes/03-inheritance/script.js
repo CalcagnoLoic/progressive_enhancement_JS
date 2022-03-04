@@ -8,7 +8,8 @@
         }
     }
 
-    class Cat extends Animal{
+    class Cat extends Animal {
+        static greeting = "Hello" ;
         constructor(greeting, name) {
             super(greeting),
             this.name = name
@@ -16,9 +17,10 @@
         sayHello() {
             return super.sayHello()
         }
-    }
+    } 
 
     class Dog extends Animal{
+        static greeting = "Hello" ;
         constructor(greeting, name) {
             super(greeting),
             this.name = name
@@ -29,10 +31,10 @@
     }
     
     document.getElementById("run").addEventListener("click", () => {
-        let cat = new Cat("kitty", "a cat")
+        let cat = new Cat("","a cat")
         console.log(cat.sayHello())
 
-        let dog = new Dog("scoubidou", "a dog")
+        let dog = new Dog("","a dog")
         console.log(dog.sayHello())
 
     })
