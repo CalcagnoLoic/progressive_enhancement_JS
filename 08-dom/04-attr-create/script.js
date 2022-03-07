@@ -7,18 +7,9 @@
 
     //ajout de l'attribut
     let attr = document.createAttribute("newImg");
-    attr.value = src;
-    //node.setAttributeNode(attr)
-    //node.getAttribute(src)
-
-    //let newImg = document.getElementById("target") //setAttributeNode(attr);
+    document.getElementById("target").setAttribute("attr", src);
 
     //suppression de l'attribut
     document.getElementById("source").removeAttribute("data-image");
 
-
-
-    //console.log(src)
-    console.log(attr)
-    //console.log(newImg)
 })();

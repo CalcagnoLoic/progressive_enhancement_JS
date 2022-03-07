@@ -3,8 +3,11 @@
 
 (() => {
 
-    let src = document.getElementsByTagName("img");
-    src.setAttribute("src", "data-hover")
-    
-    console.log(src)
+    let img = document.querySelector("img");
+    let kiss = img.getAttribute("data-hover");
+
+    img.addEventListener("mouseover", () => {
+        img.src = kiss;
+    })
+
 })();
