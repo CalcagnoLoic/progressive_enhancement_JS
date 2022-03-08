@@ -5,11 +5,18 @@
     //récupération de l'attribut
     let src = document.getElementById("source").getAttribute("data-image");
 
-    //ajout de l'attribut
-    let attr = document.createAttribute("newImg");
-    document.getElementById("target").setAttribute("attr", src);
+    //création d'un nouvel élémént
+    let img = document.createElement("img")//createAttribute("newImg")
+    let attr = document.createAttribute("newImg")
+    img.appendChild(attr)
+
+    //création d'un nouvel attribut
+    
 
     //suppression de l'attribut
     document.getElementById("source").removeAttribute("data-image");
 
+    console.log(src)
+    //console.log(atrr)
+    console.log(img)
 })();

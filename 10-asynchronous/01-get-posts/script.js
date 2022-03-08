@@ -2,5 +2,13 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts(test = (callback, test) => {
+            if (callback != null) {
+                console.log("oui")
+            } else {
+                console.log(test)
+            }
+        })
+    })
 })();

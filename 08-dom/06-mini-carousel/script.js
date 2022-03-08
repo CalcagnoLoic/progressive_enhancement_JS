@@ -11,8 +11,15 @@
         "../../_shared/img/map.svg",
     ];
 
+    let x = document.getElementsByTagName("img");
+
     document.getElementById("next").addEventListener("click", () => {
-        
+        document.getElementsByTagName("img").setAttribute("source", gallery);
+        while (x < gallery.length) {
+            x++ ;
+            x = 0 ;
+        }
     })
 
+    console.log(x)
 })();

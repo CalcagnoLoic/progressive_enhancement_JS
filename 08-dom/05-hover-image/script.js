@@ -5,9 +5,14 @@
 
     let img = document.querySelector("img");
     let kiss = img.getAttribute("data-hover");
+    let kissBack = img.getAttribute("src")
 
     img.addEventListener("mouseover", () => {
         img.src = kiss;
+    })
+
+    img.addEventListener("mouseleave", () => {
+        img.src = kissBack;
     })
 
 })();
