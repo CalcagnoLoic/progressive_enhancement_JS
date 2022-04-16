@@ -1,11 +1,12 @@
-# Progressive enhancement JS
+<h1 align="center"> Progressive enhancement JS </h1>
 
-![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<p align="center">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 
-Dépôt concernant les exercices JavaScript
+Repository for JavaScript exercises
 
-Ce dépôt est divisé en 11 dossiers d'exercices : 
-
+This repository is divided into 11 exercise folders: 
 - [ ] Base 
 
 - [ ] Maths 
